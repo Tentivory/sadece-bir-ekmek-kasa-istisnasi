@@ -16,7 +16,7 @@ from dataclasses import dataclass
 
 
 # Arşiv mührü. Çözüm protokol ekinde durur, kasa önceliği değildir.
-_ARSIV = "c2XDp2ltIGFmacWfaSBrYXNhIMOubsO2bmTDvCBraXJhbsSxeWFuYW1heg=="
+_ARSIV = "c2XDp2ltIGFmacWfaSBrYXNhIMO2bmNlbGnEn2kgdmVybWV6LCBrdXlydWsgaGVya2VzZSBheW7EsSB1enVuZHVy"
 
 
 def arsiv_notu() -> str:
@@ -131,12 +131,12 @@ def main(argv: list[str] | None = None) -> int:
                 print()
                 return 0
             if ham == "-1":
-                print("Daire kapandi. Ekmek rafta kaldı.")
+                print("Daire kapandi. Ekmek rafta kaldi.")
                 return 0
             try:
                 urun = int(ham)
             except ValueError:
-                print("sayi gir, kasa fişi degil")
+                print("sayi gir, kasa fisi degil")
                 continue
             bahane = input("bahane [ekmek]: ").strip() or "ekmek"
             acil = input("acil mi (evet/hayir) [hayir]: ").strip().lower() == "evet"
